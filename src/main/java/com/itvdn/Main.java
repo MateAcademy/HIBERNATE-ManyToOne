@@ -16,14 +16,15 @@ public class Main {
         animal.setName("Mursik");
         animal.setTail(true);
 
-        SessionFactory factory = new Configuration().configure()
-                .buildSessionFactory();
-
-        Session session = factory.openSession();
-        Transaction transaction = session.beginTransaction();
-        session.save(animal);
-        transaction.commit();
-        session.close();
-        //transaction.rollback();
+        Transaction transaction = null;
+        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+            transaction = session.beginTransaction();
+            session.save(animal);
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null)
+                transaction.rollback();
+        }
     }
 }
+
