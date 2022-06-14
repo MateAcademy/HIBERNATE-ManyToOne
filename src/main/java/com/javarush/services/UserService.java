@@ -4,7 +4,6 @@ import com.javarush.dao.UserDao;
 import com.javarush.model.Auto;
 import com.javarush.model.User;
 
-
 import java.util.List;
 
 public class UserService {
@@ -20,7 +19,6 @@ public class UserService {
 
     public void saveUser(User user) {
         usersDao.save(user);
-
     }
 
     public void deleteUser(User user) {

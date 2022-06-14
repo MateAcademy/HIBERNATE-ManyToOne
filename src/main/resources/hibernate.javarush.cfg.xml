@@ -6,7 +6,7 @@
     <session-factory>
         <property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name = "hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate_javarush?serverTimezone=UTC</property>
+        <property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate_javarush</property>
 
 
         <property name = "hibernate.connection.username">root</property>
@@ -23,7 +23,8 @@
 
         <!-- Это класс сущность которого совпадает с сущностью таблиц-->
         <!--<mapping class="com.itvdn.Animal" />-->
+        <mapping class="com.javarush.model.Auto" />
+        <mapping class="com.javarush.model.User" />
         <!--<mapping class="com.itvdn.hibernate_first.Flower" />-->
-
     </session-factory>
 </hibernate-configuration>

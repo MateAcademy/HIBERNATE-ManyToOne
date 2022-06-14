@@ -1,9 +1,7 @@
 package com.itvdn;
 
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 
 /**
  * Created by Asus on 22.04.2018.
