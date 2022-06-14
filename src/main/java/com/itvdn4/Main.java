@@ -26,7 +26,7 @@ public class Main {
 
         //SessionFactory factory = new Configuration().configure().buildSessionFactory();
         SessionFactory factory = new AnnotationConfiguration()
-                .configure("com/itvdn4/itvdn4.xml")
+                .configure()
                 .buildSessionFactory();
 
         Session session = factory.openSession();
