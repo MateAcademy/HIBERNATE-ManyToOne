@@ -1,4 +1,4 @@
-package com.clients;
+package main.java.com.clients;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -41,6 +41,7 @@ public class ClientRepository {
         emf.close();
     }
 
+    @SuppressWarnings("unchecked")
     public List<Client> getAll() {
         em.getTransaction().begin();
         Query query = em.createQuery("SELECT clients FROM Client clients");

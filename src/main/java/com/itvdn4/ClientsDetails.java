@@ -1,4 +1,4 @@
-package com.itvdn4;
+package main.java.com.itvdn4;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

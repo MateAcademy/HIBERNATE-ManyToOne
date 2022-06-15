@@ -1,5 +1,6 @@
-package com.itvdn4;
+package main.java.com.itvdn4;
 
+import main.java.com.itvdn4.ClientsDetails;
 import org.apache.log4j.BasicConfigurator;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
