@@ -1,4 +1,4 @@
-package com.itvdn4;
+package com.clients;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,15 +9,17 @@ import javax.persistence.*;
 /**
  * @author Sergey Klunniy
  */
+
 @Data
-@Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "clientsdetails2")
-public class ClientsDetails {
+@Entity
+@Table(name = "client")
+public class Client {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column
     private int id;
 
     @Column
@@ -28,4 +30,5 @@ public class ClientsDetails {
 
     @Column
     private String phone;
+
 }

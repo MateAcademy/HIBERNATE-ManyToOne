@@ -1,11 +1,9 @@
 package com.itvdn4;
 
-
-
+import org.apache.log4j.BasicConfigurator;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
-
 
 /**
  * @author Sergey Klunniy
@@ -15,12 +13,12 @@ public class Main {
 //    private final static Logger logger = Logger.getLogger(Main.class);
 
     public static void main(String[] args) {
-//        BasicConfigurator.configure();
+        BasicConfigurator.configure();
 //        logger.error("Info log message");
 
         ClientsDetails details = new ClientsDetails();
         details.setAge(20);
-        details.setId(0);
+       // details.setId(1);
         details.setName("Vasiliy");
         details.setPhone("+38095750703");
 
@@ -36,4 +34,5 @@ public class Main {
         session.close();
 
     }
+
 }
