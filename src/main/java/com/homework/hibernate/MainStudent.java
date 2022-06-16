@@ -26,17 +26,16 @@ public class MainStudent {
 //        session.getTransaction().commit();
 //        session.close();
 
-
-        Session session =factory.openSession();
+        Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
         session.save(sergey);
         session.save(sergey2);
         transaction.commit();
 
         if (session.isOpen())
-        session.close();
+            session.close();
 
         if (!factory.isClosed())
-        factory.close();
+            factory.close();
     }
 }
