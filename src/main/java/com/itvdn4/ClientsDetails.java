@@ -1,4 +1,4 @@
-package main.java.com.itvdn4;
+package com.itvdn4;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,7 +13,7 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "clientsdetails2")
+@Table(name = "clientsdetails")
 public class ClientsDetails {
 
     @Id

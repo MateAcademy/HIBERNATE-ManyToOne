@@ -1,4 +1,4 @@
-package main.java.com.clients;
+package com.clients;
 
 import java.util.List;
 
@@ -49,9 +49,9 @@ public class Main {
 
 
 
-//        Client client1 = cr.getByID(2);
-//        client1.setPhone("(050)2223355");
-//        cr.add(client1);
+        Client client1 = cr.getByID(4);
+        client1.setPhone("(066)000000");
+        cr.add(client1);
         List<Client> clients = cr.getAll();
         for (Client client2 : clients) {
             System.out.println(client2.getId() + " " + client2.getName() + " "

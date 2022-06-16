@@ -1,10 +1,11 @@
-package main.java.com.itvdn4;
+package com.itvdn4;
 
-import main.java.com.itvdn4.ClientsDetails;
+import com.itvdn4.ClientsDetails;
 import org.apache.log4j.BasicConfigurator;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
 
 /**
  * @author Sergey Klunniy
@@ -23,7 +24,7 @@ public class Main {
         details.setName("Vasiliy");
         details.setPhone("+38095750703");
 
-        //SessionFactory factory = new Configuration().configure().buildSessionFactory();
+//        SessionFactory factory = new Configuration().configure().buildSessionFactory();
         SessionFactory factory = new AnnotationConfiguration()
                 .configure()
                 .buildSessionFactory();

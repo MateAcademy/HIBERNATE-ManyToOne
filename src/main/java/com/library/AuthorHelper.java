@@ -1,4 +1,4 @@
-package main.java.com.library;
+package com.library;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
@@ -17,6 +17,7 @@ public class AuthorHelper {
     }
 
     public List<Author> getAuthorList() {
+
         Session session = sessionFactory.openSession();
         Criteria cb = session.createCriteria(Author.class);
         List<Author> authorList = cb.list();

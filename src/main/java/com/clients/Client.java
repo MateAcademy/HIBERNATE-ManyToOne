@@ -1,4 +1,4 @@
-package main.java.com.clients;
+package com.clients;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -21,7 +21,8 @@
         <property name="show_sql">true</property>
 
         <!-- Это класс сущность которого совпадает с сущностью таблиц-->
-        <mapping class="com.itvdn4.ClientsDetails"/>
+        <mapping class="com.homework.hibernate.model.Student"/>
+        <!--<mapping class="com.itvdn4.ClientsDetails"/>-->
 
     </session-factory>
 </hibernate-configuration>

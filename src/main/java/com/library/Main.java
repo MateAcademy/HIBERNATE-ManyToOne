@@ -1,4 +1,4 @@
-package main.java.com.library;
+package com.library;
 
 import java.util.List;
 

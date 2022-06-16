@@ -1,4 +1,4 @@
-package com.library;
+package com.homework.hibernate.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,16 +12,23 @@ import javax.persistence.Id;
 /**
  * @author Sergey Klunniy
  */
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 @Entity
-public class Book {
+public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     private String name;
-    private long author_id;
+
+    private String phone;
+
+    public Student(String name, String phone) {
+        this.name = name;
+        this.phone = phone;
+    }
+
 }

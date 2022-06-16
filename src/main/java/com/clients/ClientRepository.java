@@ -1,4 +1,5 @@
-package main.java.com.clients;
+package com.clients;
+
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -15,7 +16,7 @@ public class ClientRepository {
     EntityManager em;
 
     public ClientRepository() {
-        this.emf = Persistence.createEntityManagerFactory("mohr");
+        this.emf = Persistence.createEntityManagerFactory("moho");
         this.em = emf.createEntityManager();
     }
 

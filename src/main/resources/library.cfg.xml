@@ -21,8 +21,8 @@
         <property name="show_sql">true</property>
 
         <!-- Это класс сущность которого совпадает с сущностью таблиц-->
-        <mapping class="main.java.com.library.Author"/>
-        <mapping class="main.java.com.library.Book"/>
+        <mapping class="com.library.Author"/>
+        <mapping class="com.library.Book"/>
 
     </session-factory>
 </hibernate-configuration>
