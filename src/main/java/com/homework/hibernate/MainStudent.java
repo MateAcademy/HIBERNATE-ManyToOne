@@ -20,6 +20,10 @@ public class MainStudent {
                 .configure()
                 .buildSessionFactory();
 
+//        SessionFactory factory = new Configuration().configure().buildSessionFactory();
+
+
+
 //        Session session = factory.openSession();
 //        session.beginTransaction();
 //        session.save(sergey);

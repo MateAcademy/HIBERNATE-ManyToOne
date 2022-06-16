@@ -22,7 +22,7 @@
 
         <!-- Это класс сущность которого совпадает с сущностью таблиц-->
         <mapping class="com.homework.hibernate.model.Student"/>
-        <!--<mapping class="com.itvdn4.ClientsDetails"/>-->
+        <mapping class="com.ex_002_hibernate_intro.ClientsDetails"/>
 
     </session-factory>
 </hibernate-configuration>

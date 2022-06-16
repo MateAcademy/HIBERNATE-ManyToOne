@@ -1,4 +1,4 @@
-package com.itvdn4;
+package com.ex_002_hibernate_intro;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
