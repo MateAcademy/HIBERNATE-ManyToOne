@@ -1,6 +1,7 @@
 package com.itvdn;
 
-
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 /**
  * Created by Asus on 22.04.2018.
@@ -18,6 +19,8 @@ public class Main {
             transaction = session.beginTransaction();
             session.save(animal);
             transaction.commit();
+            session.close();
+            HibernateUtil.closeSessionFactory();
         } catch (Exception e) {
             if (transaction != null)
                 transaction.rollback();
