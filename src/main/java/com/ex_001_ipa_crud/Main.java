@@ -1,4 +1,4 @@
-package com.clients;
+package com.ex_001_ipa_crud;
 
 import java.util.List;
 
@@ -24,9 +24,9 @@ public class Main {
 
 
 
-//        List<Client> clients = cr.getAll();
+//        List<Client> ex_001_ipa_crud = cr.getAll();
 //
-//        for (Client client:clients) {
+//        for (Client client:ex_001_ipa_crud) {
 //            System.out.println(client.getId() + " " + client.getName() + " "
 //            + client.getAge() + " " + client.getPhone());
 //        }
@@ -40,8 +40,8 @@ public class Main {
 //
 //        cr.remove(client);
 //
-//        List<Client> clients = cr.getAll();
-//        for (Client client2 : clients) {
+//        List<Client> ex_001_ipa_crud = cr.getAll();
+//        for (Client client2 : ex_001_ipa_crud) {
 //            System.out.println(client2.getId() + " " + client2.getName() + " "
 //                    + client2.getAge() + " " + client2.getPhone());
 //        }
@@ -73,8 +73,8 @@ public class Main {
 //        client.setPhone("+380503117088");
 //        cr.add(client);
 
-//        List<Client> clients = cr.getAll();
-//        for (Client client : clients) {
+//        List<Client> ex_001_ipa_crud = cr.getAll();
+//        for (Client client : ex_001_ipa_crud) {
 //           System.out.println(client.getId() +  " " + client.getName() + " "
 //                + client.getAge() + " " + client.getPhone());
 //        }

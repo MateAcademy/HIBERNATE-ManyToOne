@@ -1,4 +1,4 @@
-package com.clients;
+package com.ex_001_ipa_crud;
 
 
 import javax.persistence.EntityManager;

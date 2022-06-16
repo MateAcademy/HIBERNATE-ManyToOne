@@ -1,4 +1,4 @@
-package com.clients;
+package com.ex_001_ipa_crud;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,7 +14,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "clients")
+@Table(name = "ex_001_ipa_crud")
 public class Client {
 
     @Id
