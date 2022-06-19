@@ -16,7 +16,7 @@ public class ClientRepository {
     EntityManager em;
 
     public ClientRepository() {
-        this.emf = Persistence.createEntityManagerFactory("moho");
+        this.emf = Persistence.createEntityManagerFactory("mohr ");
         this.em = emf.createEntityManager();
     }
 

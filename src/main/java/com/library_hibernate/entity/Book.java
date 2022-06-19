@@ -1,4 +1,4 @@
-package com.library;
+package com.library_hibernate.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

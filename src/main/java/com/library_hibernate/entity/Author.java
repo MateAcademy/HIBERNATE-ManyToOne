@@ -1,4 +1,4 @@
-package com.library;
+package com.library_hibernate.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,8 +24,8 @@ public class Author {
 
     private String name;
 
-//    private String last_name;
-//
-//    private String name22;
+    public Author(String name) {
+        this.name = name;
+    }
 
 }

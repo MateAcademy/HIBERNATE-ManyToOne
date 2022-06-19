@@ -1,7 +1,6 @@
-package com.library;
+package com.library_hibernate;
 
 import org.hibernate.HibernateException;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
 

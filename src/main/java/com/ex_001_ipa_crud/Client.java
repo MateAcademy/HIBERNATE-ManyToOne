@@ -14,7 +14,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "ex_001_ipa_crud")
+@Table(name = "clients")
 public class Client {
 
     @Id

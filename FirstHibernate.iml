@@ -6,9 +6,11 @@
         <datasource-map>
           <unit-entry name="hibernate.cfg.xml" />
           <unit-entry name="hibernate.javarush.cfg.xml" />
+          <unit-entry name="library.cfg.xml" />
         </datasource-map>
         <naming-strategy-map />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/library.cfg.xml" />
       </configuration>
     </facet>
     <facet type="jpa" name="JPA">
