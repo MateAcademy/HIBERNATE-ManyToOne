@@ -51,7 +51,11 @@ public class AuthorHelper {
 
     public List<Author> getListAuthorByName(String name) {
         Session session = sessionFactory.openSession();
-        SQLQuery sqlQuery = session.createSQLQuery("select p " + "from Person p " + "where p.name like 'Joe'");
+        SQLQuery sqlQuery = session.createSQLQuery("select a from Author a where a.name like ?");
+        sqlQuery.setParameter(0, name);
+       // List<User> users = (List<User>)  HibernateSessionFactoryUtil.getSessionFactory().openSession().createQuery("From User").list();
+        List<Author> authorList = (List<Author>)sqlQuery.uniqueResult();
+        return authorList;
     }
 
     public Author getAuthorByID(long id) {
