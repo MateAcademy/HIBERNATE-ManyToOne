@@ -6,6 +6,10 @@ import com.javarush.services.UserService;
 
 import java.sql.SQLException;
 
+/**
+ * @author Sergey Klunniy
+ * CRUD-приложение (Create,Read,Update,Delete),
+ */
 public class Main {
     public static void main(String[] args) throws SQLException {
 
