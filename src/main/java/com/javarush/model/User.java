@@ -17,7 +17,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int user_id;
 
-    @Column(name = "name")
+    @Column
     private String name;
     //можно не указывать Column name, если оно совпадает с названием столбца в таблице
     private int age;

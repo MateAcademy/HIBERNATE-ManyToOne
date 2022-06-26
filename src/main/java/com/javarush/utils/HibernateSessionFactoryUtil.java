@@ -14,7 +14,7 @@ public class HibernateSessionFactoryUtil {
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
-                Configuration configuration = new Configuration().configure("hibernate.javarush.cfg.xml");
+                Configuration configuration = new Configuration().configure("hibernate.j.xml");
                 configuration.addAnnotatedClass(User.class);
                 configuration.addAnnotatedClass(Auto.class);
                 StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());

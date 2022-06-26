@@ -4,14 +4,12 @@ import com.javarush.model.Auto;
 import com.javarush.model.User;
 import com.javarush.services.UserService;
 
-import java.sql.SQLException;
-
 /**
  * @author Sergey Klunniy
  * CRUD-приложение (Create,Read,Update,Delete),
  */
 public class Main {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) {
 
         UserService userService = new UserService();
         User user = new User("Masha",26);

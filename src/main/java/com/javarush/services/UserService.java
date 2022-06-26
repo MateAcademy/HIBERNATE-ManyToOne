@@ -1,6 +1,6 @@
 package com.javarush.services;
 
-import com.javarush.dao.UserDao;
+import com.javarush.dao.impl.UserDaoImpl;
 import com.javarush.model.Auto;
 import com.javarush.model.User;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 public class UserService {
 
-    private UserDao usersDao = new UserDao();
+    private UserDaoImpl usersDao = new UserDaoImpl();
 
     public UserService() {
     }
